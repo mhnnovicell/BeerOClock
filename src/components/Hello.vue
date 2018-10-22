@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+<countdown></countdown>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
@@ -20,12 +21,17 @@
 </template>
 
 <script>
+import Countdown from './Countdown.vue'
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js PWA'
     }
+  },
+
+  components: {
+    Countdown
   }
 }
 </script>
