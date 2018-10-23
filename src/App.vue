@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <main>
-      <h1 class="main-headline">BeerOClock</h1>
+      <h1 class="main-headline">Beer'O'Clock</h1>
       <router-view></router-view>
     </main>
     <footer>
