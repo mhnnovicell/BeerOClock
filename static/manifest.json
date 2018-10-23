@@ -1,6 +1,6 @@
 {
-  "name": "beeroclock",
-  "short_name": "beeroclock",
+  "name": "BeerOClock",
+  "short_name": "BeerOClock",
   "icons": [{
       "src": "/static/img/icons/android-chrome-192x192.png",
       "sizes": "192x192",
