@@ -50,7 +50,7 @@
 		      }, 1000);
 		  },
 		  getDiffInSeconds () {
-		    return moment("2018-12-21 22:00:00").format('X') - this.actualTime
+		    return moment("2018-10-23 22:00:00").format('X') - this.actualTime
 		  },
 		  compute () {
 		    var duration = moment.duration(this.getDiffInSeconds(), "seconds")

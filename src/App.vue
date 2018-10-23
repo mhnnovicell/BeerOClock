@@ -1,21 +1,11 @@
 <template>
   <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
     <main>
-
-      <img src="./assets/logo.svg" alt="Vue.js PWA">
+      <img src="./assets/logo.svg" class="bodylogo" alt="bodylogo">
       <router-view></router-view>
-      <span>{{ new Date() | moment("dddd, MMMM Do YYYY, h:mm:ss a") }}</span>
-      <span>{{ new Date() | moment("calendar") }}</span>
-
-<span>{{ [-10, 'minutes'] | duration('humanize', true) }}</span>
-<span>{{ [2, 'years'] | duration('add', 1, 'year') | duration('humanize') }}</span>
-<!-- e.g. "7/10/2011" -->
     </main>
     <footer>
-      <img src="./assets/nzlogo.png">
+      <img src="./assets/nzlogo.png" alt="nozebralogo" class="footerlogo">
     </footer>
   </div>
 </template>
@@ -27,6 +17,27 @@
 </script>
 
 <style>
+html {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 319px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
 body {
   margin: 0;
   animation: colorchange 30s infinte;
@@ -102,6 +113,16 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+
+.footerlogo {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.bodylogo {
+  width: 50vw;
 }
 </style>
 
