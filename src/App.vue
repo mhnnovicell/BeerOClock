@@ -5,7 +5,7 @@
       <router-view></router-view>
     </main>
     <footer>
-      <img src="./assets/nzlogo.png" alt="nozebralogo" class="footerlogo">
+      <img src="../static/img/nzlogo.png" alt="nozebralogo" class="footerlogo">
     </footer>
   </div>
 </template>

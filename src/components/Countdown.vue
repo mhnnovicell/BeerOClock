@@ -28,12 +28,16 @@
       <div class="time-unite-value">{{ seconds }}</div>
       <div class="time-unite-title">seconds</div>
 
+
     </div>
   </div>
 </template>
 
 <script>
   import moment from "moment";
+
+
+
   export default {
     data() {
       return {
@@ -43,7 +47,8 @@
         days: 0,
         hours: 0,
         minutes: 0,
-        seconds: 0
+        seconds: 0,
+        beeroclock: "BeerOClock!"
       };
     },
     methods: {
@@ -70,6 +75,7 @@
     created() {
       this.compute();
       this.addOneSecondToActualTimeEverySecond();
+      this.beeroclock;
     },
     watch: {
       actualTime(val, oldVal) {
@@ -78,3 +84,5 @@
     }
   };
 </script>
+
+
