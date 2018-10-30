@@ -1,6 +1,6 @@
 {
-  "name": "Beer'O'Clock",
-  "short_name": "Beer'O'Clock",
+  "name": "beeroclock",
+  "short_name": "beeroclock",
   "icons": [{
       "src": "/static/img/icons/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -10,10 +10,28 @@
       "src": "/static/img/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+
+    {
+      "src": "/static/img/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+
+    {
+      "src": "/static/img/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+
+    {
+      "src": "/static/img/icons/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
     }
   ],
   "start_url": "/index.html",
   "display": "fullscreen",
-  "background_color": "#fcaa7f",
-  "theme_color": "#fcaa7f"
+  "background_color": "#fca780",
+  "theme_color": "#fca780"
 }
