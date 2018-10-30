@@ -1,28 +1,35 @@
 <template>
 	<div class="countdown">
+
 	    <div class="time-unite created" v-show="years">
-	        <div class="time-unite-title">Y</div>
-	        <div class="time-unite-value">{{ years }}</div>
+	    <div class="time-unite-value">{{ years }}</div>
+			<div class="time-unite-title">Y</div>
 	    </div>
+
 	    <div class="time-unite created" v-show="months">
-	        <div class="time-unite-title">Måneder</div>
-	        <div class="time-unite-value">{{ months }}</div>
+	    <div class="time-unite-value">{{ months }}</div>
+			<div class="time-unite-title">Måneder</div>
 	    </div>
+
 	    <div class="time-unite created" v-show="days">
-	        <div class="time-unite-title">Dage</div>
-	        <div class="time-unite-value">{{ days }}</div>
+	    <div class="time-unite-value">{{ days }}</div>
+			<div class="time-unite-title">Dage</div>
 	    </div>
+
 	    <div class="time-unite created">
-	        <div class="time-unite-title">Timer</div>
-	        <div class="time-unite-value">{{ hours }}</div>
+	    <div class="time-unite-value">{{ hours }}</div>
+			<div class="time-unite-title">Timer</div>
 	    </div>
+
 	    <div class="time-unite created">
-	        <div class="time-unite-title">Minutter</div>
-	        <div class="time-unite-value">{{ minutes }}</div>
+	    <div class="time-unite-value">{{ minutes }}</div>
+			<div class="time-unite-title">Minutter</div>
 	    </div>
+
 	    <div class="time-unite created">
-	        <div class="time-unite-title">Sekunder</div>
-	        <div class="time-unite-value">{{ seconds }}</div>
+	    <div class="time-unite-value">{{ seconds }}</div>
+			<div class="time-unite-title">Sekunder</div>
+
 	    </div>
 	</div>
 </template>

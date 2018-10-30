@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Pacifico');
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  animation: colorchange 60s infinte;
+  /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 60s infinite;
+  /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+  0% {
+    background: #13547a;
+  }
+
+  25% {
+    background: #80d0c7;
+  }
+
+  50% {
+    background: #f6d365;
+  }
+
+  75% {
+    background: #F09819;
+
+  }
+
+  100% {
+    background: #fda085;
+
+  }
+}
+
+@-webkit-keyframes colorchange
+
+/* Safari and Chrome - necessary duplicate */
+  {
+  0% {
+    background: #13547a;
+  }
+
+  25% {
+    background: #80d0c7;
+  }
+
+  50% {
+    background: #f6d365;
+  }
+
+  75% {
+    background: #F09819;
+
+  }
+
+  100% {
+    background: #fda085;
+
+  }
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footerlogo {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 5vw;
+}
+
+.headline {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.time-unite-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.time-unite-value {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-size: 2.5rem;
+  color: white;
+}
+
+
+@media screen and (min-width: 319px) and (max-width: 450px) {
+  html {
+    font-size: 1.2rem;
+  }
+
+
+  .time-unite-value {
+    font-size: inherit;
+  }
+
+  .time-unite-title {
+    font-size: inherit;
+  }
+
+  .headline {
+    font-size: 2.5rem;
+  }
+
+  .footerlogo {
+    width: 10vw;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
