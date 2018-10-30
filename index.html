@@ -10,6 +10,9 @@
   <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]-->
   <!-- Add to home screen for Android and modern mobile browsers -->
   <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
+  <!-- include PWACompat _after_ your manifest -->
+  <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js" integrity="sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA"
+    crossorigin="anonymous"></script>
   <meta name="theme-color" content="#fca780">
 
   <!-- Add to home screen for Safari on iOS -->
