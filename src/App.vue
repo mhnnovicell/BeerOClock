@@ -3,6 +3,7 @@
     <main>
       <h1 class="main-headline">Beer'O'Clock</h1>
       <router-view></router-view>
+            <timer date="December, 2018"></timer>
     </main>
     <footer>
       <img src="../static/img/nzlogo.png" alt="nozebralogo" class="footerlogo">
@@ -11,9 +12,16 @@
 </template>
 
 <script>
+import Timer from "./components/Timer";
   export default {
-    name: 'app'
+    name: 'app',
+
+    components: {
+    Timer
   }
+  }
+
+
 </script>
 
 <style>
