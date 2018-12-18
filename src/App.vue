@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <main>
-      <router-view></router-view>
+      <countdown></countdown>
     </main>
     <footer>
       <img src="../static/img/nzlogo.png" alt="nozebralogo" class="footerlogo">
@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import Timer from "./components/Timer";
+import Countdown from "./components/Countdown";
 export default {
   name: "app",
 
   components: {
-    Timer
+    Countdown
   }
 };
 </script>

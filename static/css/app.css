@@ -3,15 +3,16 @@
 html {
   font-size: 1rem;
   color: white;
+  height: 100%;
 }
 
 
 body {
   margin: 0;
-  animation: colorchange 30s infinte;
+  animation: colorchange 120s infinte;
   /* animation-name followed by duration in seconds*/
   /* you could also use milliseconds (ms) or something like 2.5s */
-  -webkit-animation: colorchange 30s infinite;
+  -webkit-animation: colorchange 120s infinite;
   /* Chrome and Safari */
 }
 
@@ -65,7 +66,20 @@ body {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+
+.countdown {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px
+}
+
 
 main {
   text-align: center;
@@ -75,8 +89,8 @@ main {
 
 .footerlogo {
   position: absolute;
-  bottom: 10px;
   right: 10px;
+  bottom: 10px;
   width: 5vw;
 }
 
@@ -84,22 +98,38 @@ main {
   width: 50vw;
 }
 
-.time-unite-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  line-height: normal;
+.countdown {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.5rem;
+  margin-top: 50px
+}
+
+.time-unite-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, .5);
+  text-transform: lowercase;
+  font-size: 1.5rem
+}
+
+.time-unite-title,
+.time-unite-value {
+  line-height: normal;
+  text-align: center
 }
 
 .time-unite-value {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  line-height: normal;
-  text-align: center;
-  font-size: 2rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .02em;
+  font-size: 2.5rem;
+  color: #fff
 }
 
 .main-headline {
@@ -113,27 +143,34 @@ main {
   align-items: center;
 }
 
-@media screen and (min-width: 319px) and (max-width: 450px) {
+@media screen and (min-width:319px) and (max-width:450px) {
   html {
+    font-size: 1.2rem
+  }
 
-    font-size: 1.2rem;
+  .time-unite-title,
+  .time-unite-value {
+    font-size: inherit
+  }
+
+  .main-headline {
+    font-size: 2.5rem
   }
 
   .footerlogo {
-
-    width: 25vw;
+    width: 10vw
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1025px) {
+@media screen and (min-width:767px) and (max-width:1025px) {
   html {
-    font-size: 1.4rem;
+    font-size: 1.4rem
   }
 }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width:1100px) {
   html {
-    font-size: 1.6rem;
+    font-size: 1.6rem
   }
 }
 
@@ -164,4 +201,25 @@ a {
   50% {
     opacity: 0;
   }
+}
+
+
+.particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0
+}
+
+.particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease
 }

@@ -6,7 +6,7 @@
     <vue-particles
       color="#dedede"
       :particleOpacity="1"
-      :particlesNumber="30"
+      :particlesNumber="40"
       shapeType="image"
       :shapeOptions="{
           image: {
@@ -63,6 +63,11 @@
 <script>
 import moment from "moment";
 import recur from "moment-recur";
+import Vue from "vue";
+import VueParticles from "vue-particles";
+
+Vue.use(VueParticles);
+
 var start,
   end,
   recurrence,
@@ -74,7 +79,6 @@ var start,
   afterTime,
   locale,
   beertime,
-  notbeertime,
   testhest;
 
 format = "hh:mm:ss";
@@ -89,16 +93,8 @@ beerday = moment().weekday();
 recurrence = moment(beertime).format("HH:mm:ss");
 beertime = moment()
   .startOf("week")
-  .day("Monday")
-  .hours("17")
-  .minutes("54")
-  .seconds("00")
-  .unix();
-
-notbeertime = moment()
-  .startOf("week")
-  .day("Monday")
-  .hours("17")
+  .day("Tuesday")
+  .hours("10")
   .minutes("00")
   .seconds("00")
   .unix();
@@ -109,7 +105,6 @@ export default {
       actualTime: moment().format("X"),
       time: time,
       beforeTime: beforeTime,
-      notbeertime: notbeertime,
       testhest: testhest,
       recurrence: recurrence,
       recurreces: recurreces,
