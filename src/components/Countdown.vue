@@ -68,33 +68,12 @@ import VueParticles from "vue-particles";
 
 Vue.use(VueParticles);
 
-var start,
-  end,
-  recurrence,
-  recurreces,
-  beerday,
-  format,
-  time,
-  beforeTime,
-  afterTime,
-  locale,
-  beertime,
-  testhest;
+var beertime;
 
-format = "hh:mm:ss";
-time = moment().unix();
-
-beforeTime: moment().weekday(1);
-afterTime: moment("15:00:00", format);
-start = moment("2018-12-22 15:00:00").format("X");
-end = moment("2019-10-26 15:00:00").format("X");
-locale = start.valueOf();
-beerday = moment().weekday();
-recurrence = moment(beertime).format("HH:mm:ss");
 beertime = moment()
   .startOf("week")
-  .day("Tuesday")
-  .hours("10")
+  .day("Friday")
+  .hours("15")
   .minutes("00")
   .seconds("00")
   .unix();
@@ -103,17 +82,7 @@ export default {
   data() {
     return {
       actualTime: moment().format("X"),
-      time: time,
-      beforeTime: beforeTime,
-      testhest: testhest,
-      recurrence: recurrence,
-      recurreces: recurreces,
-      beerday: beerday,
       beertime: beertime,
-      start: start,
-      afterTime: afterTime,
-      locale: locale,
-      end: end,
       years: 0,
       months: 0,
       days: 0,
