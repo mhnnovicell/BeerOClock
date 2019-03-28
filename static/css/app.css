@@ -132,6 +132,12 @@ main {
   color: #fff
 }
 
+.edition-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+
+}
+
 .main-headline {
   font-family: 'Pacifico', cursive;
   font-size: 4rem;

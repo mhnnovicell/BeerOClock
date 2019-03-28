@@ -1,0 +1,54 @@
+body {
+  animation: colorchange 120s infinte;
+  // /* animation-name followed by duration in seconds*/
+  // /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 120s infinite;
+  // /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+  0% {
+    background: #FF9419;
+  }
+
+  25% {
+    background: #DF9158;
+  }
+
+  50% {
+    background: #F67037;
+  }
+
+  75% {
+    background: #DF4726;
+  }
+
+  100% {
+    background: #9E2119;
+  }
+}
+
+@-webkit-keyframes colorchange
+/* Safari and Chrome - necessary duplicate */
+
+  {
+  0% {
+    background: #13547a;
+  }
+
+  25% {
+    background: #80d0c7;
+  }
+
+  50% {
+    background: #f6d365;
+  }
+
+  75% {
+    background: #fda085;
+  }
+
+  100% {
+    background: #ff5858;
+  }
+}

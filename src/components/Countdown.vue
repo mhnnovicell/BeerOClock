@@ -3,30 +3,219 @@
     v-if="days <= '0' &&  hours <= '0' && minutes <= '0' && seconds <= '0' || beertime == 'true'"
   >
     <h1 class="main-headline blink_me">Beer'O'Clock</h1>
-    <vue-particles
-      color="#dedede"
-      :particleOpacity="1"
-      :particlesNumber="40"
-      shapeType="image"
-      :shapeOptions="{
+    <div v-if="summermonth === true">
+      <p class="edition-text blink_me">Summer Edition</p>
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/drink.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="50"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/sunny.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+    </div>
+
+    <div v-if="springmonth === true">
+      <p class="edition-text blink_me">Spring Edition</p>
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/flower.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="50"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
           image: {
             src: '../../static/img/beer.png',
             width: 64,
             height: 64
           }
         }"
-      :particleSize="30"
-      linesColor="#333333"
-      :linesWidth="1"
-      :lineLinked="false"
-      :lineOpacity="0.4"
-      :linesDistance="150"
-      :moveSpeed="3"
-      :hoverEffect="true"
-      hoverMode="none"
-      :clickEffect="true"
-      clickMode="repulse"
-    ></vue-particles>
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+    </div>
+
+    <div v-if="autumnmonth === true">
+      <p class="edition-text blink_me">Autumn Edition</p>
+
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/leaves.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="50"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/beer.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+    </div>
+
+    <div v-if="wintermonth === true">
+      <p class="edition-text blink_me">Winter Edition</p>
+
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/snowflake.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="50"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="1"
+        :particlesNumber="15"
+        shapeType="image"
+        :shapeOptions="{
+          image: {
+            src: '../../static/img/beer.png',
+            width: 64,
+            height: 64
+          }
+        }"
+        :particleSize="30"
+        linesColor="#333333"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="none"
+        :clickEffect="true"
+        clickMode="repulse"
+      ></vue-particles>
+    </div>
   </div>
 
   <div v-else>
@@ -68,7 +257,15 @@ import VueParticles from "vue-particles";
 
 Vue.use(VueParticles);
 
+var summertimestart;
+var summertimeend;
+var summertime;
+
 var beertime;
+var summermonth;
+var wintermonth;
+var springmonth;
+var autumnmonth;
 
 beertime = moment()
   .startOf("week")
@@ -78,11 +275,32 @@ beertime = moment()
   .seconds("00")
   .unix();
 
+// summertimestart = moment([2019, 3, 1]);
+// summertimeend = moment([2019, 8, 1]);
+// summertime = summertimeend.diff(summertimestart, "months");
+// console.log(summertime);
+
+// var duration = moment.duration(summertimeend.diff(summertimestart)).valueOf();
+
+// console.log(duration);
+
+wintermonth = moment().isBetween("2019-12-01", "2020-02-31", "days");
+
+springmonth = moment().isBetween("2019-03-01", "2019-05-31", "days");
+
+summermonth = moment().isBetween("2019-06-01", "2019-08-31", "days");
+
+autumnmonth = moment().isBetween("2019-09-01", "2019-11-31", "days");
+
 export default {
   data() {
     return {
       actualTime: moment().format("X"),
       beertime: beertime,
+      summermonth: summermonth,
+      wintermonth: wintermonth,
+      springmonth: springmonth,
+      autumnmonth: autumnmonth,
       years: 0,
       months: 0,
       days: 0,
@@ -124,5 +342,6 @@ export default {
   }
 };
 </script>
+
 
 
