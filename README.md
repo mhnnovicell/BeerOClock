@@ -1,6 +1,7 @@
 # beeroclock
 
-> beeroclock
+Can be viewed here:
+https://beeroclock.mikkelraev.dk/
 
 ## Build Setup
 
